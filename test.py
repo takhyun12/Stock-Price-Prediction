@@ -5,7 +5,7 @@ from keras.models import Sequential
 from keras.layers import LSTM, Dropout, Dense, Activation
 import datetime
 
-data = pd.read_csv('dataset/naver.csv')
+data = pd.read_csv('dataset/samsung.csv')
 data.head()
 
 # Data pre-processing
@@ -127,6 +127,7 @@ for i in range(len(pred)):
 
 fig = plt.figure(facecolor='white', figsize=(20, 10))
 ax = fig.add_subplot(111)
+ax.plot(pred_y, label='Real price')
 ax.plot(pred_result, label='Prediction')
 ax.legend()
 plt.show()
