@@ -5,7 +5,10 @@ from keras.models import Sequential
 from keras.layers import LSTM, Dropout, Dense, Activation
 import datetime
 
-data = pd.read_csv('dataset/kakao.csv')
+dataset_path = 'dataset/kakao.csv'
+
+# Read Dataset
+data = pd.read_csv(dataset_path)
 data.head()
 
 # Get Mid Price
@@ -49,7 +52,7 @@ model = Sequential()
 model.add(LSTM(50, return_sequences=True, input_shape=(50, 1)))
 model.add(LSTM(64, return_sequences=False))
 model.add(Dense(1, activation='linear')) # output
-model.compile(loss='mse', optimizer='rmsprop') # Mean squared error
+model.compile(loss='mse', optimizer='adam') # Mean squared error
 print(model.summary())
 
 # Training
