@@ -132,8 +132,8 @@ ax.plot(pred_result, label='Prediction')
 ax.legend()
 plt.show()
 
-# print('%0.2f'%float(pred_result[-3]))
-# print('%0.2f'%float(pred_result[-2]))
-print('내일 :', '%0.2f'%float(pred_result[-1]))
+print('prediction :', '%0.2f'%float(pred_result[-3]))
+print('prediction :', '%0.2f'%float(pred_result[-2]))
+print('prediction :', '%0.2f'%float(pred_result[-1]))
 
 
