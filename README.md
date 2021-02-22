@@ -36,4 +36,7 @@ $ Python prediction.py
 
 ---
 
+### References
+
+* https://github.com/kairess/stock_crypto_price_prediction
 
