@@ -5,6 +5,8 @@ Author: Tackhyun Jung
 
 Status: 진행 중
 
+![samsung](https://user-images.githubusercontent.com/41291493/108652768-430c4d80-7508-11eb-8e60-fde15f2f5e31.png)
+
 ### 핵심목표
 1) LSTM 모델을 기반으로 주가 예측을 수행 (완료)
 2) streamlit 라이브러리 기반 웹 앱 인터페이스 제공 (진행중)
