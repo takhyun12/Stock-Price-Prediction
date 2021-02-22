@@ -1,19 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="637b9e0e-9637-4db3-9bc8-c354b9c55d11" name="Default Changelist" comment="코드추가">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/stock prediction.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="637b9e0e-9637-4db3-9bc8-c354b9c55d11" name="Default Changelist" comment="테스트">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/kakao.csv" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/kakao.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/naver.csv" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/naver.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/samsung.csv" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/samsung.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/kakao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/naver.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/naver.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/samsung.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/samsung.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
   </component>
   <component name="Git.Merge.Settings">
     <option name="BRANCH" value="origin/main" />
@@ -30,15 +43,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/result" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.prediction">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="stock prediction" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -61,7 +75,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="prediction" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="stock prediction" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -74,7 +88,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="D:\Project\stock prediction\prediction.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -85,7 +99,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test" />
+        <item itemvalue="Python.prediction" />
         <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
@@ -98,7 +112,31 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610331153305</updated>
-      <workItem from="1610331154663" duration="4645000" />
+      <workItem from="1610331154663" duration="7166000" />
+      <workItem from="1610364958910" duration="19000" />
+      <workItem from="1610428579427" duration="2051000" />
+      <workItem from="1610445410725" duration="13000" />
+      <workItem from="1610674932209" duration="1176000" />
+      <workItem from="1610934865752" duration="1567000" />
+      <workItem from="1611019476810" duration="1157000" />
+      <workItem from="1611050203653" duration="1048000" />
+      <workItem from="1611200877937" duration="1541000" />
+      <workItem from="1611280310733" duration="926000" />
+      <workItem from="1611295697030" duration="25000" />
+      <workItem from="1611724987830" duration="232000" />
+      <workItem from="1611739945584" duration="526000" />
+      <workItem from="1611795269367" duration="1738000" />
+      <workItem from="1612137810245" duration="1087000" />
+      <workItem from="1612150448430" duration="10000" />
+      <workItem from="1612230367270" duration="350000" />
+      <workItem from="1612243776724" duration="23000" />
+      <workItem from="1612359262012" duration="609000" />
+      <workItem from="1612400827458" duration="359000" />
+      <workItem from="1612500080937" duration="885000" />
+      <workItem from="1612753842189" duration="424000" />
+      <workItem from="1612925911285" duration="1115000" />
+      <workItem from="1613302999352" duration="9000" />
+      <workItem from="1613524681879" duration="276000" />
     </task>
     <task id="LOCAL-00001" summary="pc test">
       <created>1610331217903</created>
@@ -114,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610334392974</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="테스트">
+      <created>1610336214179</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610336214179</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,14 +175,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pc test" />
     <MESSAGE value="코드추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="코드추가" />
+    <MESSAGE value="테스트" />
+    <option name="LAST_COMMIT_MESSAGE" value="테스트" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/stock_prediction$main.coverage" NAME="main Coverage Results" MODIFIED="1610332929181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/stock_prediction$test.coverage" NAME="test Coverage Results" MODIFIED="1610335058499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/stock_prediction$main.coverage" NAME="main Coverage Results" MODIFIED="1611739962631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/stock_prediction$test.coverage" NAME="test Coverage Results" MODIFIED="1613524795798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

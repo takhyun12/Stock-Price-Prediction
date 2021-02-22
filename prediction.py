@@ -5,7 +5,7 @@ from keras.models import Sequential
 from keras.layers import LSTM, Dropout, Dense, Activation
 import datetime
 
-data = pd.read_csv('dataset/samsung.csv')
+data = pd.read_csv('dataset/naver.csv')
 data.head()
 
 # Data pre-processing
@@ -62,28 +62,7 @@ model.summary()
 model.fit(x_train, y_train,
     validation_data=(x_test, y_test),
     batch_size=10,
-    epochs=20)
-
-'''
-pred = model.predict(x_test)
-
-# 복원
-pred_result = []
-pred_y = []
-for i in range(len(pred)):
-    n1 = (pred[i] * window_std[i]) + window_mean[i]
-    n2 = (y_test[i] * window_std[i]) + window_mean[i]
-    pred_result.append(n1)
-    pred_y.append(n2)
-
-fig = plt.figure(facecolor='white', figsize=(20, 10))
-ax = fig.add_subplot(111)
-ax.plot(pred_y, label='True')
-ax.plot(pred_result, label='Prediction')
-ax.legend()
-plt.show()
-'''
-
+    epochs=35)
 
 # model test
 lt = mid_prices[-365:]
@@ -132,8 +111,8 @@ ax.plot(pred_result, label='Prediction')
 ax.legend()
 plt.show()
 
-print('prediction :', '%0.2f'%float(pred_result[-3]))
-print('prediction :', '%0.2f'%float(pred_result[-2]))
-print('prediction :', '%0.2f'%float(pred_result[-1]))
+print('3 day:', '%0.2f'%float(pred_result[-3]))
+print('2 day:', '%0.2f'%float(pred_result[-2]))
+print('1 day:', '%0.2f'%float(pred_result[-1]))
 
 
